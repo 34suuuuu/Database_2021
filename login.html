@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title> Login Page</title>
+<link rel="stylesheet" href="./login.css">
+
+<head>
+    <!-- <div>
+        <a href="mainpage.html" class="title">
+            스터디룸 예약
+        </a>
+    </div> -->
+    <h1>
+        <!-- Login -->
+        <a href="mainpage.html" class="title">
+            스터디룸 예약
+        </a>
+    </h1>
+</head>
+
+<body>
+    <!-- <form action="login_check.php" method="POST">
+        <div>
+
+            ID <input type="text" name="loginid" placeholder="아이디를 입력하세요" maxlength=20 size=20> <br>
+            PW <input type="password" name="loginpassword" maxlength=20 size=20><br>
+            아이디 저장 <input type="checkbox">
+            <p>
+                <input type="submit" value="로그인">
+                <br><br>
+                <input type="button" value="회원가입" onClick="location.href='join.html';">
+                <input type="button" value="아이디 찾기">
+                <input type="button" value="비밀번호 찾기">
+        </div>
+        </p>
+    </form> -->
+    <form action="login_check.php" method="POST">
+        <input type="text" placeholder="아이디를 입력하세요" name="loginid" maxlength=20 size=20 />
+        <input type="password" placeholder="비밀번호를 입력하세요" name="loginpassword" maxlength=20 size=20 />
+        <input type="submit" value="로그인">
+        <div class="buttons">
+            <input type="button" value="회원가입" onClick="location.href='join.html';">
+            <input type="button" value="아이디 찾기">
+            <input type="button" value="비밀번호 찾기">
+        </div>
+
+    </form>
+</body>
+
+</html>
