@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방 정보 삭제 </title>
+    <link rel="stylesheet" href="../css/admin_delete.css">
+    <link rel="stylesheet" href="../css/template.css">
+</head>
+
+<body>
+    <h1>
+        <a href="home.html" class="title">
+            성공을 나누는 스터디룸🍀
+        </a>
+    </h1>
+    <ul class="tab-menu">
+        <li class="tab-menu-item">
+            <a href="admin_home.html">
+                HOME
+            </a>
+        </li>
+        <li class="tab-menu-item">
+            <a href="admin_add.html">
+                방 정보 등록
+            </a>
+        </li>
+        <li class="tab-menu-item">
+            <a href="admin_delete.html">
+                방 정보 삭제
+            </a>
+        </li>
+        <li class="tab-menu-item">
+            <a href="#">
+                예약현황
+            </a>
+        </li>
+    </ul>
+
+    <div class="delete-form">
+        <div class="delete-title">방 정보 삭제</div>
+        <form action="../php/admin_delete" name="room_del" method="POST">
+            <input type="text" name="room_num" placeholder="방 번호 ">
+            <input type="submit" value="삭제">
+            <div class="room-info">
+                <?php include "../php/admin_roominfo.php" ?>
+            </div>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
