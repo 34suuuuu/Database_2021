@@ -27,27 +27,30 @@
             </a>
         </li>
         <li class="tab-menu-item">
-            <a href="admin_delete.html">
+            <a href="admin_delete.html" class="now">
                 방 정보 삭제
             </a>
         </li>
         <li class="tab-menu-item">
-            <a href="#">
+            <a href="admin_reserved.html">
                 예약현황
+            </a>
+        </li>
+        <li class="tab-menu-item">
+            <a href="../php/logout.php">
+                로그아웃
             </a>
         </li>
     </ul>
 
     <div class="delete-form">
         <div class="delete-title">방 정보 삭제</div>
-        <form action="../php/admin_delete" name="room_del" method="POST">
+        <form action="../php/admin_delete.php" name="room_del" method="POST">
             <input type="text" name="room_num" placeholder="방 번호 ">
             <input type="submit" value="삭제">
             <div class="room-info">
                 <?php include "../php/admin_roominfo.php" ?>
             </div>
-
-
         </form>
     </div>
 </body>
